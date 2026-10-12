@@ -2,7 +2,7 @@ class Lull < Formula
   desc "Stops the dev servers your coding agents forgot"
   homepage "https://github.com/rgrvlsk/lull"
   url "https://github.com/rgrvlsk/lull/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "490fc691d4c882ac4c1a2eac5e8296bd2ea60fbc4b096fd63d26af461e0e2402"
+  sha256 "444a641c2316674facd613f0cd7a0eec1cdaf04787aef2ac1bdb90abe8455582"
   license any_of: ["MIT", "Apache-2.0"]
 
   depends_on "rust" => :build
