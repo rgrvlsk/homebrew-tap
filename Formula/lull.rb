@@ -1,17 +1,17 @@
 class Lull < Formula
   desc "Stops the dev servers your coding agents forgot"
   homepage "https://github.com/rgrvlsk/lull"
-  url "https://github.com/rgrvlsk/lull/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "444a641c2316674facd613f0cd7a0eec1cdaf04787aef2ac1bdb90abe8455582"
+  url "https://github.com/rgrvlsk/lull/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "ad1f65e083404b37a8e1d26f30009024748499ef3af3f62c973b29232989bfc6"
   license any_of: ["MIT", "Apache-2.0"]
 
   depends_on "rust" => :build
-  depends_on :macos
+  depends_on macos: :sequoia
 
   # The unpacked Chromium extension, built from extension/ at the same tag (ADR-0007).
   resource "chromium-extension" do
-    url "https://github.com/rgrvlsk/lull/releases/download/v0.2.0/lull-extension-chromium-0.2.0.zip"
-    sha256 "03de21f1b53a2b2bbb1fa35ff039c46c7d7ae7113d10b73e779aa009723d11fe"
+    url "https://github.com/rgrvlsk/lull/releases/download/v0.3.0/lull-extension-chromium-0.3.0.zip"
+    sha256 "f5836489f35d242d46eb03c639be548da54816faa28848926cf875ef04454295"
   end
 
   def install
